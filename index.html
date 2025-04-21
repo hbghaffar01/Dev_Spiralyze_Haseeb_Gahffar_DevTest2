@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Get an Intervention provides support for older adults through community engagement and social initiatives."
+    />
+    <meta
+      name="keywords"
+      content="intervention, older adults, social engagement, community support"
+    />
+    <!-- Author -->
+    <meta name="author" content="Get an Intervention Inc, by Haseeb Ghaffar" />
+    <meta name="robots" content="index, follow" />
+    <link
+      rel="icon"
+      href="https://img.icons8.com/?size=100&id=mSI0ge5j8qfg&format=png&color=000000"
+      type="image/png"
+    />
+    <title>Get An Intervention</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- preload main images -->
+    <link rel="preload" href="../assets/hero-bg.webp" as="image" />
+    <link rel="preload" href="../assets/logo.webp" as="image" />
+    <link rel="preload" href="../assets/img-1.webp" as="image" />
+    <link rel="preload" href="../assets/img-2.webp" as="image" />
+    <link rel="preload" href="../assets/img-3.webp" as="image" />
+    <link rel="preload" href="../assets/user.webp" as="image" />
+    <link rel="preload" href="../assets/user-2.webp" as="image" />
+    <link rel="preload" href="../assets/user-3.webp" as="image" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Data for SEO -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Get an Intervention Inc.",
+        "url": "https://www.getanintervention.com",
+        "logo": "./assets/logo.webp",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+1-123-456-7890",
+          "contactType": "Customer Service"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="preloader" class="preloader"></div>
+    <div class="main-cont">
+      <div class="container">
+        <div class="hero-section">
+          <navbar-component></navbar-component>
+          <div class="section-1 flex align-items justify-between">
+            <div class="left-container">
+              <h1 class="main-heading" id="hero-heading"></h1>
+              <p class="text-para" id="hero-text"></p>
+            </div>
+            <div class="right-container">
+              <div class="contact-container">
+                <h2 id="contact-heading"></h2>
+                <form
+                  id="contactForm"
+                  role="form"
+                  aria-labelledby="contact-heading"
+                >
+                  <div class="row-1 flex gap-1">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        id="firstName"
+                        class="form-control"
+                        required
+                        aria-required="true"
+                        aria-label="First Name"
+                      />
+                      <label for="firstName" class="label">First Name</label>
+                      <div class="error-message">
+                        This field can't be empty. Please fill it in.
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        id="lastName"
+                        class="form-control"
+                        required
+                        aria-required="true"
+                        aria-label="Last Name"
+                      />
+                      <label for="lastName" class="label">Last Name</label>
+                      <div class="error-message">
+                        This field can't be empty. Please fill it in.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row-1 flex gap-1">
+                    <div class="form-group">
+                      <input
+                        type="email"
+                        id="email"
+                        class="form-control"
+                        required
+                        aria-required="true"
+                        aria-label="Business Email"
+                      />
+                      <label for="email" class="label">Business Email</label>
+                      <div class="error-message">
+                        This field can't be empty. Please fill it in.
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        id="company"
+                        class="form-control"
+                        required
+                        aria-required="true"
+                        aria-label="Company"
+                      />
+                      <label for="company" class="label">Company</label>
+                      <div class="error-message">
+                        This field can't be empty. Please fill it in.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <select
+                      id="country"
+                      class="form-control"
+                      required
+                      aria-required="true"
+                      aria-label="Country"
+                    ></select>
+                    <label for="country" class="label">Country</label>
+                    <div class="error-message">
+                      This field can't be empty. Please fill it in.
+                    </div>
+                  </div>
+                  <button
+                    type="submit"
+                    class="submit-btn flex align-items justify-center gap-1"
+                    aria-label="Submit Form"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_5_36)">
+                        <path
+                          d="M2.01 21L23 12L2.01 3L2 10L17 12L2 14L2.01 21Z"
+                          fill="white"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_5_36">
+                          <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <p>Submit</p>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="curvy-section">
+        <img
+          src="./assets/curves.webp"
+          class="desktop-curve"
+          alt="Decorative curve"
+          draggable="false"
+          fetchPriority="high"
+        />
+        <img
+          src="./assets/curves-2.webp"
+          class="tablet-curve"
+          alt="Decorative curve"
+          draggable="false"
+          fetchPriority="low"
+          decoding="async"
+        />
+        <img
+          src="./assets/curves-3.webp"
+          class="mobile-curve"
+          alt="Decorative curve"
+          draggable="false"
+          fetchPriority="low"
+          decoding="async"
+        />
+      </div>
+    </div>
+
+    <div class="second-container">
+      <div class="row-1 flex justify-between">
+        <card-component
+          image="./assets/img-1.webp"
+          alt="Image 1"
+        ></card-component>
+        <card-component
+          image="./assets/img-2.webp"
+          alt="Image 2"
+        ></card-component>
+        <card-component
+          image="./assets/img-3.webp"
+          alt="Image 3"
+        ></card-component>
+      </div>
+      <div class="row-2">
+        <div class="flex align-items justify-between">
+          <h2 id="understand-heading"></h2>
+          <hr />
+        </div>
+        <div class="para-contaier flex justify-between section-hidden">
+          <div class="para-section">
+            <div class="box-text" id="understand-text-1"></div>
+            <div class="box-text" id="understand-text-2"></div>
+          </div>
+          <div class="box-text visiblity-hidden" id="understand-text-4"></div>
+          <div class="box-text visiblity-hidden" id="understand-text-5"></div>
+          <div class="box-text">
+            <div id="understand-text-3"></div>
+            <button
+              class="light-button flex justify-center align-items gap-1"
+              aria-label="View Success Rate"
+            >
+              <p>92% Success Rate</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="17"
+                height="14"
+                viewBox="0 0 17 14"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M11.3431 0.92888L16.7071 6.29284C17.0976 6.68336 17.0976 7.31653 16.7071 7.70705L11.3431 13.071C10.9526 13.4615 10.3195 13.4615 9.92893 13.071C9.53841 12.6805 9.53841 12.0473 9.92893 11.6568L13.5858 7.99995H0V5.99995H13.5858L9.92893 2.34309C9.53841 1.95257 9.53841 1.3194 9.92893 0.92888C10.3195 0.538355 10.9526 0.538355 11.3431 0.92888Z"
+                  fill="#5BC8AF"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="flex justify-between mob-para">
+          <div class="first-box" id="understand-mobile-text-1"></div>
+          <div class="second-box" id="understand-mobile-text-2">
+            <button
+              class="light-button flex justify-center align-items gap-1 button-mobile"
+              aria-label="View Success Rate"
+            >
+              <p>92% Success Rate</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="17"
+                height="14"
+                viewBox="0 0 17 14"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M11.3431 0.92888L16.7071 6.29284C17.0976 6.68336 17.0976 7.31653 16.7071 7.70705L11.3431 13.071C10.9526 13.4615 10.3195 13.4615 9.92893 13.071C9.53841 12.6805 9.53841 12.0473 9.92893 11.6568L13.5858 7.99995H0V5.99995H13.5858L9.92893 2.34309C9.53841 1.95257 9.53841 1.3194 9.92893 0.92888C10.3195 0.538355 10.9526 0.538355 11.3431 0.92888Z"
+                  fill="#5BC8AF"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <slider-component></slider-component>
+
+    <div class="section-three">
+      <div class="row-2">
+        <div class="flex align-items justify-between">
+          <h2 id="organize-heading"></h2>
+          <hr />
+        </div>
+        <div class="flex justify-between inter">
+          <div class="box-text-2-unique" id="interventions-text"></div>
+          <div class="box-text-2" id="loneliness-text"></div>
+          <div class="box-text-2" id="methodology-text"></div>
+        </div>
+        <div class="services">
+          <tooltip-component
+            tooltip-text=""
+            aria-label="Needs Assessment Tooltip"
+            service-text="Needs Assessment"
+          ></tooltip-component>
+          <tooltip-component
+            tooltip-text=""
+            aria-label="Treatment Planning & Placement Tooltip"
+            service-text="Treatment Planning & Placement"
+          ></tooltip-component>
+          <tooltip-component
+            tooltip-text=""
+            aria-label="Transportation & Logistics Tooltip"
+            service-text="Transportation & Logistics"
+          ></tooltip-component>
+          <tooltip-component
+            tooltip-text=""
+            aria-label="Insurance Advocacy Tooltip"
+            service-text="Insurance Advocacy"
+          ></tooltip-component>
+          <tooltip-component
+            tooltip-text=""
+            aria-label="Employment Advocacy Tooltip"
+            service-text="Employment Advocacy"
+          ></tooltip-component>
+          <tooltip-component
+            tooltip-text=""
+            aria-label="Aftercare Planning Tooltip"
+            service-text="Aftercare Planning"
+          ></tooltip-component>
+        </div>
+      </div>
+    </div>
+
+    <div class="watch-video">
+      <div class="left-block">
+        <div class="zigzag">
+          <h2 id="video-heading"></h2>
+          <div class="icon-box">
+            <div class="flex gap-3 align-items-baseline">
+              <div class="icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="14"
+                  viewBox="0 0 18 14"
+                  fill="none"
+                >
+                  <path
+                    d="M5.6 10.6L1.4 6.4L0 7.8L5.6 13.4L17.6 1.4L16.2 0L5.6 10.6Z"
+                    fill="#5BC8AF"
+                  />
+                </svg>
+              </div>
+              <div class="text-container">
+                <h3 id="video-service-1"></h3>
+                <p id="video-service-1-text"></p>
+              </div>
+            </div>
+          </div>
+          <div class="icon-box">
+            <div class="flex gap-3 align-items-baseline">
+              <div class="icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="14"
+                  viewBox="0 0 18 14"
+                  fill="none"
+                >
+                  <path
+                    d="M5.6 10.6L1.4 6.4L0 7.8L5.6 13.4L17.6 1.4L16.2 0L5.6 10.6Z"
+                    fill="#5BC8AF"
+                  />
+                </svg>
+              </div>
+              <div class="text-container">
+                <h3 id="video-service-2"></h3>
+                <p id="video-service-2-text"></p>
+              </div>
+            </div>
+          </div>
+          <div class="icon-box">
+            <div class="flex gap-3 align-items-baseline">
+              <div class="icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="14"
+                  viewBox="0 0 18 14"
+                  fill="none"
+                >
+                  <path
+                    d="M5.6 10.6L1.4 6.4L0 7.8L5.6 13.4L17.6 1.4L16.2 0L5.6 10.6Z"
+                    fill="#5BC8AF"
+                  />
+                </svg>
+              </div>
+              <div class="text-container">
+                <h3 id="video-service-3"></h3>
+                <p id="video-service-3-text"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="vid-mob-btn">
+          <button id="vid-play-btn" aria-label="Play Video">
+            <img
+              src="./assets/vid-icon.png"
+              alt="Play video icon"
+              draggable="false"
+              fetchPriority="high"
+              decoding="auto"
+            />
+          </button>
+        </div>
+      </div>
+      <div class="right-block">
+        <div class="flex justify-center align-items vid-col">
+          <button id="vid-play-btn" aria-label="Play Video">
+            <img
+              src="./assets/vid-icon.png"
+              alt="Play video icon"
+              draggable="false"
+              fetchPriority="high"
+              decoding="auto"
+            />
+          </button>
+        </div>
+        <div class="footer-logo">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="227"
+            height="35"
+            viewBox="0 0 227 35"
+            fill="none"
+          ></svg>
+        </div>
+        <div class="logo-stamp">
+          <a href="index.html" aria-label="Home">
+            <img
+              src="./assets/logo.webp"
+              alt="Get an Intervention Logo"
+              draggable="false"
+              fetchPriority="low"
+              decoding="async"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <footer-component></footer-component>
+
+    <div
+      id="myModal"
+      class="modal"
+      role="dialog"
+      aria-labelledby="video-heading"
+    >
+      <div class="modal-content">
+        <div class="modal-header"></div>
+        <div class="close" role="button" aria-label="Close">
+          <span>×</span>
+        </div>
+        <div id="videoPlayer">
+          <video id="modalVideo" controls aria-label="Promotional video">
+            <source src="./assets/senior_care.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./js/script.js"></script>
+    <script type="module" src="./web-components/navbar-component.js"></script>
+    <script type="module" src="./web-components/footer-component.js"></script>
+    <script type="module" src="./web-components/card-component.js"></script>
+    <script type="module" src="./web-components/slider-component.js"></script>
+    <script type="module" src="./web-components/tooltip-component.js"></script>
+  </body>
+</html>
