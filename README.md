@@ -68,8 +68,8 @@ This project is a fully responsive website built to match the Figma designs prov
 
 1. **Clone the Repository**:
    ```
-   git clone url
-   cd folder
+   git clone git@github.com:hbghaffar01/Dev_Spiralyze_Haseeb_Gahffar_DevTest2.git
+   cd Dev_Spiralyze_Haseeb_Gahffar_DevTest2
    ```
 
 2. **Serve the Project**:
